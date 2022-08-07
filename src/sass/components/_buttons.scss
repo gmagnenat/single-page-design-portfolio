@@ -1,0 +1,40 @@
+@use '../abstracts/variables';
+
+.btn {
+    font-size: variables.$fs-4;
+    line-height: variables.$lh-8;
+    font-weight: variables.$fw-bold;
+    padding-inline: 1.7rem;
+    padding-block: 0.5rem;
+    border: none;
+    color: variables.$clr-cream;
+    background-color: variables.$clr-neutral-900;
+    border-radius: 100vw;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn--primary {
+    background-color: variables.$clr-neutral-900;
+
+    &:hover {
+        background-color: variables.$clr-purple;
+    }
+}
+
+.btn--alt {
+    background-color: variables.$clr-orange;
+
+    &:hover {
+        background-color: variables.$clr-yellow;
+    }
+}
+
+// tablet breakpoint
+@media (min-width: 30em) {
+    .btn {
+        font-size: variables.$fs-8;
+        padding-inline: 2.8rem;
+        padding-block: 0.8rem;
+    }
+}
