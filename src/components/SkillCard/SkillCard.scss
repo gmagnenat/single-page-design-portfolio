@@ -1,0 +1,25 @@
+@use '../../sass/abstracts/variables';
+
+.skillCard {
+  background-size: cover;
+  min-width: 300px;
+  min-height: 300px;
+  position: relative;
+  border-radius: variables.$fs-6;
+}
+
+.skillCard__image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.skillCard__text {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  // color: variables.$clr-white;
+  color: #000;  //temporary
+  font-weight: variables.$fw-bold;
+  font-size: variables.$fs-9;
+}

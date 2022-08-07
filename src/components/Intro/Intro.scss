@@ -1,3 +1,5 @@
+@use '../../sass/abstracts/variables';
+
 .intro {
   display: grid;
   place-items: center;
@@ -5,15 +7,15 @@
 
 .intro__header {
   font-weight: bold;
-  font-size: 36px;
+  font-size: variables.$fs-11;
   text-align: center;
   padding-top: 20px;
-  color: #030303;
+  color: variables.$clr-neutral-900;
 }
 
 .intro__text {
-  color: #7A746E;
-  font-weight: 400;
+  color: variables.$clr-brown;
+  font-weight: variables.$fw-regular;
   padding: 15px 30px;
   text-align: center;
 }

@@ -1,19 +1,12 @@
+@use '../../sass/abstracts/variables';
+
 .header {
   display: flex;
   justify-content: space-between;
-  height: 48px;
+  height: variables.$fs-14;
   align-items: center;
 }
 
 .header__logo img{
-  height: 48px;
-}
-
-.header__text button {
-  background-color: #000;
-  color: #FFF7F0;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
+  height: variables.$fs-14;
 }
