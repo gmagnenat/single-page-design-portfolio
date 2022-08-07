@@ -1,0 +1,19 @@
+.intro {
+  display: grid;
+  place-items: center;
+}
+
+.intro__header {
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20px;
+  color: #030303;
+}
+
+.intro__text {
+  color: #7A746E;
+  font-weight: 400;
+  padding: 15px 30px;
+  text-align: center;
+}
