@@ -9,6 +9,7 @@ $clr-cyan: hsl(172, 46%, 57%);
 $clr-purple: hsl(314, 45%, 23%);
 $clr-brown: hsl(30, 5%, 45%);
 $clr-cream: hsl(28, 100%, 97%);
+$clr-white: #fff;
 
 /* ------------------------------ Font familes ------------------------------ */
 $ff: 'Plus Jakarta Sans', sans-serif;
@@ -17,10 +18,12 @@ $ff: 'Plus Jakarta Sans', sans-serif;
 $fs-4: 0.875rem; // 14px
 $fs-6: 1rem; // 16px
 $fs-8: 1.125rem; // 18px
+$fs-9: 1.5rem;
 $fs-10: 2rem; // 32px
 $fs-11: 2.25rem; // 36px
 $fs-12: 2.5rem; // 40px
-$fs-14: 3.5rem; // 56px
+$fs-14: 3rem;
+$fs-16: 3.5rem; // 56px
 
 /* ------------------------------ font weights ------------------------------ */
 $fw-regular: 400;

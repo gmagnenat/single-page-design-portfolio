@@ -1,0 +1,22 @@
+@use '../../sass/abstracts/variables';
+
+.skillCard {
+  background-size: cover;
+  border-radius: variables.$fs-6;
+  display: flex;
+  flex-direction: column;
+}
+
+.skillCard__image {
+  margin-left: auto;
+  padding:variables.$fs-4 variables.$fs-4 0 0;
+}
+
+.skillCard__text {
+  margin-top: auto;
+  // color: variables.$clr-white;
+  color: #000;  //temporary
+  font-weight: variables.$fw-bold;
+  font-size: variables.$fs-9;
+  padding-left:variables.$fs-4;
+}
