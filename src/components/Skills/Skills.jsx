@@ -11,7 +11,7 @@ import img6 from '../../assets/pattern-apps.svg'
 const Skills = () => {
   return (
     <div className="skills_grid">
-      <SkillCard image={img1} skill={"Graphic Design"}/>
+      <SkillCard image={img1} skill={"Graphic Design"} bgColor/>
     </div>
     
   )

@@ -5,12 +5,8 @@ import './Header.scss'
 const Header = () => {
   return (
     <div className='header'>
-      <div className="header__logo">
-        <img src={logo} alt="" />
-      </div>
-      <div className="header__text">
-        <button className='btn btn--dark'>Free Consultation</button>
-      </div>
+      <img className="header__logo" src={logo} alt="" />
+      <button className='btn btn--dark header__text'>Free Consultation</button>
     </div>
   )
 }
