@@ -1,0 +1,33 @@
+@use '../abstracts/variables';
+
+.bg-blue {
+    background-color: variables.$clr-blue;
+}
+
+.bg-yellow {
+    background-color: variables.$clr-yellow;
+}
+
+.bg-pink {
+    background-color: variables.$clr-pink;
+}
+
+.bg-orange {
+    background-color: variables.$clr-orange;
+}
+
+.bg-cyan {
+    background-color: variables.$clr-cyan;
+}
+
+.bg-purple {
+    background-color: variables.$clr-purple;
+}
+
+.bg-brown {
+    background-color: variables.$clr-brown;
+}
+
+.bg-cream {
+    background-color: variables.$clr-cream;
+}

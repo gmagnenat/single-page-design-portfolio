@@ -5,12 +5,10 @@ import Skills from './components/Skills/Skills';
 
 function App() {
     return (
-        <div className="App">
-            <>
-                <Header />
-                <Intro />
-								<Skills />
-            </>
+        <div className="app">
+            <Header />
+            <Intro />
+            <Skills />
         </div>
     );
 }
