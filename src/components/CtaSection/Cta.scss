@@ -1,0 +1,32 @@
+@use '../../sass/abstracts/variables';
+
+.cta {
+  margin-top: 80px;
+}
+
+.cta_image {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.cta_details {
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  color: variables.$clr-neutral-900;
+  font-weight: variables.$fw-bold;
+  font-size: variables.$fs-18;
+  line-height: 2.5rem;
+  padding-bottom: variables.$fs-18;
+}
+
+p {
+  color: variables.$clr-brown;
+  line-height: 2rem;
+}
+
+.cta__btn {
+  margin-top: variables.$fs-18;
+}
