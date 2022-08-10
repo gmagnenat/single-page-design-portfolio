@@ -6,18 +6,15 @@
     display: flex;
     flex-direction: column;
     color: variables.$clr-neutral-100;
-}
 
-.skillCard__image {
-    margin-left: auto;
-    padding: variables.$fs-4 variables.$fs-4 0 0;
+    &__image {
+        margin-left: auto;
+        max-height: 4rem;
+    }
 }
 
 .skillCard__text {
     margin-top: auto;
-    // color: variables.$clr-white;
-    // color: #000; //temporary
     font-weight: variables.$fw-bold;
     font-size: variables.$fs-9;
-    padding-left: variables.$fs-4;
 }
