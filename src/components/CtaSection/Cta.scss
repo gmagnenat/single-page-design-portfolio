@@ -2,31 +2,31 @@
 
 .cta {
   margin-top: 5rem;
-}
 
-.cta__image {
-  width: 100%;
-  margin-bottom: 2.5rem;
-}
+  &__image {
+    width: 100%;
+    margin-bottom: 2.5rem;
+  }
 
-.cta__details {
-  align-items: center;
-  text-align: center;
-}
+  &__details {
+    align-items: center;
+    text-align: center;
+  }
 
-h2 {
-  color: variables.$clr-neutral-900;
-  font-weight: variables.$fw-bold;
-  font-size: variables.$fs-18;
-  line-height: 2.5rem;
-  padding-bottom: 1.625rem;
-}
+  &__btn {
+    margin-top: 1.625rem;
+  }
 
-p {
-  color: variables.$clr-brown;
-  line-height: 2rem;
-}
+  h2 {
+    color: variables.$clr-neutral-900;
+    font-weight: variables.$fw-bold;
+    font-size: variables.$fs-18;
+    line-height: 2.5rem;
+    padding-bottom: 1.625rem;
+  }
 
-.cta__btn {
-  margin-top: 1.625rem;
+  p {
+    color: variables.$clr-brown;
+    line-height: 2rem;
+  }
 }
