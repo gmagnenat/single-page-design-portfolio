@@ -17,15 +17,15 @@
     margin-top: 1.625rem;
   }
 
-  h2 {
+  &__title {
     color: variables.$clr-neutral-900;
     font-weight: variables.$fw-bold;
-    font-size: variables.$fs-18;
+    font-size: variables.$fs-9;
     line-height: 2.5rem;
     padding-bottom: 1.625rem;
   }
 
-  p {
+  &__info {
     color: variables.$clr-brown;
     line-height: 2rem;
   }
