@@ -2,6 +2,7 @@ import './App.scss';
 import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Skills from './components/Skills/Skills';
+import BookCall from './components/BookCall/BookCall';
 
 function App() {
     return (
@@ -9,6 +10,7 @@ function App() {
             <Header />
             <Intro />
             <Skills />
+            <BookCall />
         </div>
     );
 }
