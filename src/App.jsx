@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Intro from './components/Intro/Intro';
 import Skills from './components/Skills/Skills';
 import Cta from './components/CtaSection/Cta';
+import BookCall from './components/BookCall/BookCall';
 
 function App() {
     return (
@@ -11,6 +12,7 @@ function App() {
             <Intro />
             <Skills />
             <Cta />
+            <BookCall />
         </div>
     );
 }

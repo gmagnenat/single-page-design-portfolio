@@ -1,0 +1,30 @@
+@use '../../sass/abstracts/variables';
+
+.bookCall {
+    margin-top: 6.25rem;
+    background-color: variables.$clr-neutral-900;
+    color: variables.$clr-cream;
+    text-align: center;
+    border-radius: 10px;
+
+    padding: 3rem 1.5rem;
+
+    display: grid;
+    gap: 1.5rem;
+
+    &__title {
+        font-size: variables.$fs-9;
+        font-weight: variables.$fw-bold;
+        line-height: 2rem;
+    }
+
+    &__body {
+        font-size: variables.$fs-6;
+        line-height: variables.$lh-8;
+    }
+
+    button {
+        max-width: 60%;
+        margin-inline: auto;
+    }
+}
