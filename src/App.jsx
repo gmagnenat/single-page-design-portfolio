@@ -5,6 +5,7 @@ import Skills from './components/Skills/Skills';
 import Cta from './components/CtaSection/Cta';
 import BookCall from './components/BookCall/BookCall';
 import Carousel from './components/Carousel/Carousel';
+import imageData from './components/Slides/Slides';
 
 function App() {
     return (
@@ -13,7 +14,7 @@ function App() {
             <Intro />
             <Skills />
             <Cta />
-            <Carousel />
+            <Carousel slides={imageData} />
             <BookCall />
         </div>
     );

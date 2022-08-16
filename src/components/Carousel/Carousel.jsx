@@ -1,38 +1,48 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Carousel.scss';
-import Slider from 'react-slick';
-import img1 from '../../assets/image-slide-1.jpg';
-import img2 from '../../assets/image-slide-2.jpg';
-import img3 from '../../assets/image-slide-3.jpg';
-import img4 from '../../assets/image-slide-4.jpg';
-import img5 from '../../assets/image-slide-5.jpg';
 import slideLeft from '../../assets/icon-arrow-left.svg';
 import slideRight from '../../assets/icon-arrow-right.svg';
+import imageData from '../Slides/Slides';
 
+const Carousel = ({ slides }) => {
 
-const Carousel = () => {
+const [current, setCurrent] = useState(0);
+const arrLength = slides.length;
 
-  // const settings = {
-  //   dots: false,
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1
-  // };
+const nextSlide = () => {
+  setCurrent(current === arrLength - 1 ? 0 : current + 1)
+}
+
+const prevSlide = () => {
+  setCurrent(current === 0 ? arrLength - 1: current - 1)
+}
+
+if(!Array.isArray(slides) || slides.length <= 0){
+  return null;
+}
 
   return (
     <div className="carousel">
-    <h2 className='carousel__header'>My Work</h2>
-      <figure className="carousel__slider">
-          <img className="carousel__image" src={img1} alt="" />
-          <img className="carousel__image" src={img2} alt="" />
-          <img className="carousel__image" src={img3} alt="" />
-          <img className="carousel__image" src={img4} alt="" />
-          <img className="carousel__image" src={img5} alt="" />
-      </figure>
+      <h2 className='carousel__header'>My Work</h2>
+       <div className="carousel__slider">
+          {
+            imageData.map((slide, index) => {
+              return (
+                <div className = {index === current ? 'slide-active' : slide} key={index}>
+                  {
+                    index === current && (
+                      <img src={slide.imageURL} alt="" className="carousel__image" />
+                    )
+                  }
+                </div>
+              )
+            })
+          }
+       </div>
+      
       <div className="carousel__arrows">
-        <img className='carousel_slider_previous' src={slideLeft} alt="" />
-        <img className='carousel_slider_next' src={slideRight} alt="" />
+        <img className='carousel_slider_previous' src={slideLeft} alt="" onClick={prevSlide}/>
+        <img className='carousel_slider_next' src={slideRight} alt="" onClick={nextSlide} />
       </div>
     </div>
   )
