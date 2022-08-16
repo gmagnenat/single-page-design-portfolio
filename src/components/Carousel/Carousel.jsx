@@ -6,7 +6,7 @@ import imageData from '../Slides/Slides';
 
 const Carousel = ({ slides }) => {
 
-const [current, setCurrent] = useState(0);
+const [current, setCurrent] = useState(2);
 const arrLength = slides.length;
 
 const nextSlide = () => {
