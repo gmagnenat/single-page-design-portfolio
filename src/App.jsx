@@ -7,6 +7,9 @@ import BookCall from './components/BookCall/BookCall';
 import Carousel from './components/Carousel/Carousel';
 import imageData from './components/Slides/Slides';
 
+import Footer from './components/Footer/Footer';
+
+
 function App() {
     return (
         <div className="app">
@@ -16,6 +19,7 @@ function App() {
             <Cta />
             <Carousel slides={imageData} />
             <BookCall />
+            <Footer />
         </div>
     );
 }

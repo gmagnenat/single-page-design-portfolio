@@ -1,12 +1,11 @@
 @use '../../sass/abstracts/variables';
 
 .header {
-  display: flex;
-  justify-content: space-between;
-  height: variables.$fs-14;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.header__logo img{
-  height: variables.$fs-14;
+.header__logo {
+    height: 3rem;
 }
